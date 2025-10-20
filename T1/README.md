@@ -21,4 +21,5 @@ Com a resposta, la Direcció Tècnica ha ordenat que tot el personal tècnic uti
 - Les imatges han d'estar dins la carpeta `img` o similar.
 - El README descriu la tasca i enllaça els documents principals.
 
-![Informe](./
+- [Informe](./Informe.md)
+- [Guia](./Guia.md)
