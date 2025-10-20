@@ -23,3 +23,4 @@ Com a resposta, la Direcció Tècnica ha ordenat que tot el personal tècnic uti
 ---
 - [Informe](./Informe.md)
 - [Guia](./Guia.md)
+- [Tornar a la pagina principal](../README.md)
