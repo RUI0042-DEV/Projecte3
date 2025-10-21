@@ -42,3 +42,6 @@ Inconvenients:
 ## 4. ✅ Recomanació
 
 Es recomana **Bitwarden** per al personal tècnic, ja que ofereix una bona combinació de **seguretat, comoditat i escalabilitat**. KeePassXC pot complementar en entorns molt restringits, però Bitwarden és més pràctic per al dia a dia.
+
+---
+[Tornar enrere](./README.md)
