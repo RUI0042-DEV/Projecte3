@@ -104,4 +104,4 @@ Bitwarden inclou un generador integrat que permet crear contrasenyes o frases de
 
 Bitwarden és una eina segura, transparent i fàcil d’utilitzar per a la gestió de contrasenyes. Aquesta guia proporciona una base sòlida perquè l’equip tècnic el pugui implementar correctament i protegir les credencials de manera eficaç. 
 ---
-[Tornar enrere](./REAMDE.md)
+[Tornar enrere](./README.md)
