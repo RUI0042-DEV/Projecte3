@@ -34,4 +34,5 @@ Implementar el servei OpenLDAP en un servidor Linux. Això inclou:
 - El document tècnic està disponible també al Moodle de l’assignatura.
 
 ---
+[Documentacio](./documentacio.md)
 [Tornar a la pagina principal](../README.md)
