@@ -48,6 +48,6 @@ A EverPia, cada projecte és una història, cada error és una lliçó, i cada t
 ---
 ## 📂 Contingut
 
-- [Tasca1](T1)
-- [Tasca4](T4)
+- [Tasca 1](T1)
+- [Tasca 4](T4)
 
