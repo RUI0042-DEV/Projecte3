@@ -31,6 +31,26 @@ El DNS està organitzat de manera jeràrquica en forma d'arbre invertit:
 
 Aquesta jerarquia permet que el sistema sigui escalable i fàcilment administrable a nivell mundial. 🌍
 
+### 🌳 Explicació de jerarquia i estructura del dns
+
+1. **Root (Arrel)**  
+   - No sap les adreces IP finals.  
+   - Sap **quins servidors TLD** (els de l’extensió `.com`, `.cat`, `.es`...) poden tenir la resposta.  
+   - Et diu a quin servidor preguntar després.
+
+2. **TLD (Dominis de Nivell Superior)**  
+   - Coneix **quins servidors autoritatius** gestionen cada domini concret.  
+   - Per exemple, si busques `empresa.cat`, el servidor del `.cat` et diu quin servidor autoritatiu sap la informació per a `empresa.cat`.
+
+3. **Servidor autoritatiu del domini**  
+   - Aquest **sí que conté els registres amb les IPs reals** (A, MX, etc.) del domini.  
+   - Retorna l’adreça IP exacta del nom que has buscat.
+
+4. **Client o navegador**  
+   - Rep la resposta final amb la IP.  
+   - Ja pot connectar-se directament al servidor web corresponent i mostrar-te la pàgina. 🌐
+
+
 ---
 
 ### 🔍 Procés de Resolució
