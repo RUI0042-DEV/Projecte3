@@ -73,6 +73,17 @@ Quan un usuari escriu un nom de domini en un navegador, s'inicia un procés de r
 - Guarden els registres DNS oficials per a un domini concret
 - Tenen la resposta definitiva per a les consultes del seu domini
 
+### 🔍 Procés de Resolució explicat
+
+El DNS funciona fent preguntes de manera **jeràrquica** fins a trobar la IP que busca:
+
+1. Primer, el **servidor DNS** del client fa una consulta.  
+2. Aquest **pregunta al servidor Root**, que no sap la IP, però sap **a quin TLD ha de preguntar**.  
+3. Després, **el servidor TLD** (com `.cat`, `.com`, `.es`) indica **quin servidor autoritatiu** té la informació.  
+4. A continuació, **el servidor autoritatiu** retorna **la IP exacta** del domini.  
+5. Finalment, el client **rep la IP** i pot accedir a la pàgina web. 🌐
+
+
 ---
 
 ### 🗂️ Tipus de Zones
