@@ -86,24 +86,30 @@ El DNS funciona fent preguntes de manera **jeràrquica** fins a trobar la IP que
 
 ---
 
-### 🗂️ Tipus de Zones
-Les zones DNS defineixen àrees d'autoritat dins d'un domini:
+### 🗂️ Tipus de Zones DNS (explicat fàcil)
 
-**➡️ Zona directa**
-- Associa noms de domini a adreces IP
-- Exemple: `www.empresa.cat` → `192.168.1.100`
+Una "zona" DNS és com un **conjunt d'informació sobre noms i adreces** que té un servidor específic. És una manera d'organitzar qui té l'autoritat sobre quina part del sistema DNS.
 
-**⬅️ Zona inversa**
-- Tradueix adreces IP cap a noms de domini
-- Exemple: `192.168.1.100` → `www.empresa.cat`
+**Hi ha diferents tipus de zones:**
 
-**👑 Zona primària**
-- Zona principal que conté la informació original
-- S'hi fan els canvis directament
+1. **Zona directa**
+   - Serveix per traduir noms de domini a adreces IP.
+   - Exemple: `www.empresa.cat` → `192.168.1.100`
+   - Sempre que escrivim una web al navegador, consultem la "zona directa" per saber la IP.
 
-**📋 Zona secundària**
-- Còpia de la zona primària per finalitats de redundància
-- S'actualitza automàticament des de la primària
+2. **Zona inversa**
+   - Serveix per traduir una adreça IP a un nom de domini.
+   - Exemple: `192.168.1.100` → `www.empresa.cat`
+   - És útil per validar que una IP correspon a un domini concret.
+
+3. **Zona primària**
+   - És **l'original**, on es fan i s'emmagatzemen els canvis de configuració.
+   - El servidor que té la zona primària és qui 'mana' per aquella zona.
+
+4. **Zona secundària**
+   - És una **còpia de la zona primària**.
+   - Serveix per seguretat o per repartir la càrrega.
+   - Si un servidor cau, la zona secundària pot respondre igualment, així no es perd el servei.
 
 ---
 
