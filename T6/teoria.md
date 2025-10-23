@@ -161,3 +161,19 @@ Cada domini conté diversos tipus de registres que defineixen el seu comportamen
 - Permet que equips dins una mateixa xarxa es resolguin noms directament
 - No necessita servidor DNS central
 - Utilitza el protocol Multicast DNS per a xarxes locals
+
+### 🏠 Resolució local (mDNS)
+
+La **resolució local** és un mecanisme que permet als dispositius d’una mateixa xarxa trobar-se entre ells **sense utilitzar un servidor DNS extern**.
+
+Això és especialment útil en xarxes petites (com les de casa o d’una oficina) on no hi ha un servidor DNS propi.
+
+**Com funciona:**
+
+- Cada equip envia un missatge a tota la xarxa local (amb el protocol *Multicast DNS* o **mDNS**).  
+- Els altres equips responen si el nom coincideix amb el seu.
+- D’aquesta manera, poden resoldre noms de dispositius com `impressora.local` o `portatil.local` sense necessitat d’un servidor DNS.
+
+**Exemple pràctic:**  
+Quan connectes una impressora Wi-Fi o un altaveu intel·ligent a la xarxa i pots escriure només `impressora.local`, el teu dispositiu l’està trobant gràcies al protocol mDNS. 🌐📡
+
