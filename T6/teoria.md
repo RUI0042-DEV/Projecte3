@@ -1,80 +1,126 @@
-# 🌐 Què és el DNS?
+# 🌐 Guia Formativa: Fonaments del Sistema de Noms de Domini (DNS)
 
-El **DNS (Domain Name System)** és un sistema que permet traduir noms de domini (com `www.google.com`) en adreces IP (com `142.250.184.196`). Això és necessari perquè els ordinadors i servidors d’Internet utilitzen adreces IP per comunicar-se entre ells, però les persones trobem molt més fàcil recordar noms que números.
-
-## 🔁 Com funciona el DNS?
-
-Quan escrius una adreça web al navegador, per exemple `www.google.com`, el teu dispositiu no sap automàticament a quin servidor ha d’anar. El que fa és demanar al sistema DNS que li digui quina IP correspon a aquest nom.
-
-**Procés:**
-1. El dispositiu envia una consulta DNS amb el nom del domini.
-2. El sistema DNS busca la IP associada a aquest nom.
-3. Quan la troba, la retorna al dispositiu.
-4. El dispositiu utilitza aquesta IP per connectar-se al servidor web i carregar la pàgina.
-
-**Exemple:**
-
-| El que escrius       | El DNS busca       | El dispositiu rep     | Es connecta a         |
-|----------------------|--------------------|------------------------|------------------------|
-| `www.google.com`     | IP corresponent     | `142.250.184.196`      | servidor de Google     |
+### 🎯 Objectiu de la Sessió
+Aquesta sessió té com a finalitat que els participants comprenguin el funcionament bàsic del DNS, la seva estructura jeràrquica, els tipus de consultes i registres, així com conceptes essencials relacionats amb la resolució de noms.
 
 ---
 
-# 🌳 Estructura jeràrquica del DNS
-
-El DNS està organitzat com un arbre jeràrquic:
-
-- **Root (Arrel)**: El punt inicial. Coneix els servidors dels dominis de primer nivell.
-- **TLD (Top-Level Domains)**: Són dominis com `.com`, `.org`, `.cat`, etc.
-- **Domini de segon nivell**: Com `google.com`, `universitat.cat`.
-- **Subdominis**: Com `mail.google.com`, `blog.universitat.cat`.
+### 📚 Què és el DNS?
+El **Sistema de Noms de Domini (DNS)** és com la "guia telefònica d'Internet". Tradueix noms de domini llegibles per humans (com `www.exemple.cat`) a adreces IP numèriques (com `192.168.1.1`) que entenen els ordinadors. Sense el DNS, hauríem de recordar números IP per accedir a cada lloc web! 🧠💭
 
 ---
 
-# 🔍 Tipus de consultes DNS
+### 🏗️ Jerarquia i Estructura del DNS
+El DNS està organitzat de manera jeràrquica en forma d'arbre invertit:
 
-- **Consulta iterativa**: El dispositiu fa diverses consultes pas a pas fins trobar la IP.
-- **Consulta recursiva**: El servidor DNS fa tot el procés per tu i et retorna la resposta final.
+**🌳 Arrel (Root ".")**
+- Punt superior de l'estructura DNS
+- Conté informació sobre tots els TLDs del món
+- Gestionat pels 13 servidors arrel globals
 
----
+**🏢 Dominis de Nivell Superior (TLDs)**
+- **Genèrics**: `.com`, `.org`, `.net`, `.edu`
+- **Geogràfics**: `.es`, `.cat`, `.fr`, `.uk`
+- **Nous gTLDs**: `.tech`, `.shop`, `.barcelona`
+- Cada TLD té els seus propis servidors autoritatius
 
-# 🗂️ Tipus de zones DNS
+**🏠 Segon Nivell i Subdominis**
+- Noms registrats sota un TLD: `empresa.cat`, `google.com`
+- Subdominis: `mail.empresa.cat`, `shop.empresa.cat`
+- Gestionats pels propietaris del domini o els seus proveïdors
 
-- **Zona directa**: Traducció de noms a IPs.
-- **Zona inversa**: Traducció d’IPs a noms (utilitzada per verificacions).
-
-També hi ha:
-- **Zona primària**: Conté la base de dades principal.
-- **Zona secundària**: Còpia de la primària, usada per redundància.
-
----
-
-# 📄 Tipus de registres DNS
-
-- **A**: Associa un nom amb una adreça IPv4.
-- **CNAME**: Crea un alias d’un altre nom.
-- **MX**: Defineix el servidor de correu.
-- **NS**: Indica els servidors autoritatius d’una zona.
-- **SRV**: Defineix serveis amb port i protocol.
+Aquesta jerarquia permet que el sistema sigui escalable i fàcilment administrable a nivell mundial. 🌍
 
 ---
 
-# 🧠 Conceptes essencials
+### 🔍 Procés de Resolució
+Quan un usuari escriu un nom de domini en un navegador, s'inicia un procés de resolució per trobar l'adreça IP associada:
 
-- **Resposta autoritativa**: Prové d’un servidor que té autoritat sobre el domini.
-- **TTL (Time To Live)**: Temps que una resposta DNS pot estar en memòria cau.
-- **SOA (Start of Authority)**: Registre que conté informació essencial sobre la gestió d’una zona DNS.
+**🔄 Consulta iterativa**
+- El servidor DNS respon amb l'adreça d'un altre servidor fins que el client troba la resposta final
+- El client fa múltiples peticions seguint les referències
+
+**🎯 Consulta recursiva**
+- El servidor DNS fa totes les consultes necessàries i retorna el resultat final al client
+- Més còmoda per al client però més càrrega per al servidor
+
+**🌐 Servidors d'arrel (Root Servers)**
+- Contenen informació sobre els TLDs
+- Dirigeixen les consultes cap als servidors corresponents
+- Hi ha 13 servidors arrel distribuïts mundialment
+
+**👑 Servidors autoritatius**
+- Guarden els registres DNS oficials per a un domini concret
+- Tenen la resposta definitiva per a les consultes del seu domini
 
 ---
 
-# 🔁 Reenviadors DNS
+### 🗂️ Tipus de Zones
+Les zones DNS defineixen àrees d'autoritat dins d'un domini:
 
-- **Condicionals**: Reenvien consultes només per a dominis específics.
-- **Incondicionals**: Reenvien totes les consultes que no poden resoldre.
+**➡️ Zona directa**
+- Associa noms de domini a adreces IP
+- Exemple: `www.empresa.cat` → `192.168.1.100`
+
+**⬅️ Zona inversa**
+- Tradueix adreces IP cap a noms de domini
+- Exemple: `192.168.1.100` → `www.empresa.cat`
+
+**👑 Zona primària**
+- Zona principal que conté la informació original
+- S'hi fan els canvis directament
+
+**📋 Zona secundària**
+- Còpia de la zona primària per finalitats de redundància
+- S'actualitza automàticament des de la primària
 
 ---
 
-# 🖧 Resolució local i mDNS
+### 📝 Tipus de Registres Clau (Records)
+Cada domini conté diversos tipus de registres que defineixen el seu comportament dins la xarxa:
 
-- **Fitxer hosts**: Permet associar noms a IPs localment, sense servidor DNS.
-- **mDNS (Multicast DNS)**: Utilitzat en xarxes locals per descobrir dispositius com impressores o altaveus, amb noms com `impresora.local`.
+**🎯 A (Address)**
+- Associa un nom de domini amb una adreça IPv4
+- Exemple: `web.empresa.cat` → `192.168.1.50`
+
+**🔗 CNAME (Canonical Name)**
+- Defineix un àlies per a un altre nom de domini
+- Exemple: `www.empresa.cat` apunta a `web.empresa.cat`
+
+**📧 MX (Mail Exchange)**
+- Indica els servidors de correu associats al domini
+- Inclou prioritat per ordenar els servidors
+
+**🌐 NS (Name Server)**
+- Especifica quins servidors són autoritatius per a la zona
+- Defineix qui té autoritat sobre el domini
+
+**⚙️ SRV (Service)**
+- Defineix serveis específics (VoIP, LDAP) i els seus ports
+- Inclou prioritat, pes, port i servidor
+
+---
+
+### ⭐ Conceptes Essencials
+
+**✅ Resposta autoritativa**
+- Es dona quan la resposta prové directament d'un servidor autoritatiu
+- És fiable i oficial, no provê de memòria cau
+
+**⏰ Time To Live (TTL)**
+- Indica quant temps pot una resposta ser desada en memòria cau
+- Valor alt: millor rendiment, propagació més lenta
+- Valor baix: propagació ràpida, més tràfic de xarxa
+
+**👑 Start of Authority (SOA)**
+- Conté informació essencial de la zona
+- Inclou: servidor principal, correu del responsable, número de sèrie, intervals de refresc
+
+**📡 Reenviadors**
+- **Incondicionals**: Totes les consultes es reenvien a un servidor específic
+- **Condicionals**: Només es reenvien consultes de certs dominis específics
+
+**🏠 Resolució local (mDNS)**
+- Permet que equips dins una mateixa xarxa es resolguin noms directament
+- No necessita servidor DNS central
+- Utilitza el protocol Multicast DNS per a xarxes locals
