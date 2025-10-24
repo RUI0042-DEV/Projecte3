@@ -46,6 +46,9 @@ A EverPia, cada projecte és una història, cada error és una lliçó, i cada t
 
 > 🔥 El foc ja està encès. Ara és el vostre torn d’agafar l’extintor… i el teclat.
 ---
+## Planner
+![Planner](https://planner.cloud.microsoft/webui/v1/plan/lUDPkLfZTky5AThwIgKmlpYADHlI?tid=c7b5981a-7820-4ac8-ae65-03515ea81317)
+---
 ## 📂 Contingut
 
 - [Tasca 1](T1)
