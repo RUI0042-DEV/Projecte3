@@ -55,7 +55,8 @@ A EverPia, cada projecte és una història 📖, cada error és una lliçó 📝
 ---
 
 ## 📂 Contingut
-
+---
+## 📄 Tascas
 - [Tasca 1](T1)
 - [Tasca 2](T2)
 - [Tasca 3](T3)
@@ -64,10 +65,13 @@ A EverPia, cada projecte és una història 📖, cada error és una lliçó 📝
 - [Tasca 6](T6)
 - [Tasca 7](T7)
 - [Tasca 8](T8)
-- [Tasca 1](T1)
-- [Tasca 1](T1)
-- [Tasca 1](T1)
-- 
+## 🧪 Productes
+- [Producte 1](P1)
+- [Producte 2](P2)
+- [Producte 3](P3)
+- [Producte 4](P4)
+- [Producte 5](P5)
+- [Producte 6](P6)
 
 
 
