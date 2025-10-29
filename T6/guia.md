@@ -35,3 +35,9 @@ Anàlisi:
 - ns-1689.awsdns-19.co.uk
 - ns-535.awsdns-02.net
 - ns-1071.awsdns-05.org
+
+### 3. Consulta Detallada SOA
+
+```bash
+dig escolapia.cat SOA
+```
