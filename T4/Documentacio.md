@@ -128,3 +128,17 @@ Utilitza:
 sudo slapcat
 ```
 Això mostrarà el contingut actual de la base de dades LDAP, incloent les OUs creades.
+---
+## 👥 Instal·lació i Configuració de LAM
+```bash
+sudo apt install ldap-account-manager
+```
+``Accés: http://<IP Host-Only>/lam``
+
+<img width="378" height="34" alt="image" src="https://github.com/user-attachments/assets/16f7424e-4c60-4eac-9b86-c8c6d0265195" />
+
+Si no saps quina IP té l’adaptador Host-Only, pots executar:
+
+```bash
+ip a
+```
