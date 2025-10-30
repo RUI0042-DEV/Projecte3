@@ -15,6 +15,12 @@ dig xtec.cat A
 ```
 <img width="607" height="386" alt="image" src="https://github.com/user-attachments/assets/8e73d6b7-44a8-43ea-af33-d7cf7ce4de6d" />
 
+Resultats:
+- IP: 83.247.151.214
+- TTL: 3180 segons
+- Servidor: 127.0.0.53
+- Estat: NOERROR
+
 Anàlisi:
 
 El domini xtec.cat té un registre A que apunta a la IP pública indicada. El TTL (3180 segons) indica que la resposta pot ser cachejada durant uns 53 minuts, cosa que ajuda a reduir càrrega en els servidors DNS. El servidor que ha respost és el DNS local (127.0.0.53), habitual en sistemes Linux amb systemd-resolved.
@@ -29,6 +35,14 @@ dig tecnocampus.cat NS
 ```
 <img width="648" height="432" alt="image" src="https://github.com/user-attachments/assets/85aae03f-a24e-4316-ab2f-80b106caa039" />
 
+Resultats:
+
+- ns-130.awsdns-16.com
+- ns-1689.awsdns-19.co.uk
+- ns-535.awsdns-02.net
+- ns-1071.awsdns-05.org
+- TTL: 85881 segons
+
 Anàlisi:
 
 El domini tecnocampus.cat utilitza servidors autoritatius d’AWS Route 53. El TTL és molt alt (gairebé 24 hores), cosa que indica que la informació es manté estable i pot ser cachejada durant molt temps. Això és habitual en dominis amb infraestructura cloud.
@@ -39,6 +53,13 @@ El domini tecnocampus.cat utilitza servidors autoritatius d’AWS Route 53. El T
 dig escolapia.cat SOA
 ```
 <img width="647" height="439" alt="image" src="https://github.com/user-attachments/assets/55e4174c-b44e-41ef-ad8f-09467cf0d26c" />
+
+Resultats:
+
+- Servidor SOA: dns1.nominalia.com
+- Correu administrador: root.dns1.nominalia.com
+- Número de sèrie: 1761028965
+- TTL: 900 segons
 
 Anàlisi:
 
@@ -64,6 +85,22 @@ nslookup
 > tecnocampus.cat
 ```
 <img width="344" height="288" alt="image" src="https://github.com/user-attachments/assets/b43ed551-e550-4d07-8451-a312dc0b35cd" />
+
+Resultats:
+
+Noms associats:
+
+- www.upc.es
+- masters.upc.edu
+- edicioweb.produccio.upc.edu
+- saladepensa.upc.edu
+- barcelonatech.upc.edu
+- barcelonatech-upc.eu
+- upc.cat
+- upc.edu
+
+
+TTL: 3600 segons
 
 Anàlisi:
 
