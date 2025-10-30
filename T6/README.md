@@ -20,3 +20,4 @@ S’ha realitzat una **auditoria pràctica** mitjançant eines de línia de coma
 ## 📂 Activitats
 
 - 📄[Guia](guia.md)
+- 🏠[Tornar pagina principal](../README.md)
