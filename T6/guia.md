@@ -141,3 +141,5 @@ ping (Nom del teu server).test
 Anàlisi:
 
 El sistema resol correctament el nom sense consultar DNS externs, cosa útil en entorns locals o per proves de desenvolupament.
+---
+[Tornar enrere](README.md)
