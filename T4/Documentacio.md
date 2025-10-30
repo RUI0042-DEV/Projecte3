@@ -137,7 +137,7 @@ sudo apt install ldap-account-manager
 
 <img width="378" height="34" alt="image" src="https://github.com/user-attachments/assets/16f7424e-4c60-4eac-9b86-c8c6d0265195" />
 
-Si no saps quina IP té l’adaptador Host-Only, pots executar:
+Si no saps quina IP té l’adaptador Host-Only, pots executar utilitzant el comanda:
 
 ```bash
 ip a
