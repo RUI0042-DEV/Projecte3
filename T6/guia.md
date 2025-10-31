@@ -86,25 +86,9 @@ nslookup
 ```
 <img width="344" height="288" alt="image" src="https://github.com/user-attachments/assets/b43ed551-e550-4d07-8451-a312dc0b35cd" />
 
-Resultats:
-
-Noms associats:
-
-- www.upc.es
-- masters.upc.edu
-- edicioweb.produccio.upc.edu
-- saladepensa.upc.edu
-- barcelonatech.upc.edu
-- barcelonatech-upc.eu
-- upc.cat
-- upc.edu
-
-
-TTL: 3600 segons
-
 Anàlisi:
 
-La resposta és no autoritativa perquè prové d’un servidor DNS intermediari (normalment el DNS local o del proveïdor), no del servidor autoritatiu del domini.
+La resposta és no autoritativa perquè la consulta s’ha fet al servidor DNS local (o al servidor per defecte del sistema), que no és un servidor autoritatiu per al domini tecnocampus.cat. Aquest servidor obté la informació d’altres servidors i la pot tenir cachejada, per això no pot garantir que sigui la font oficial. Això és la diferència principal amb la consulta autoritativa, que es fa directament al servidor NS del domini.
 
 ### 2. Consulta Autoritativa
 ```bash
@@ -112,11 +96,12 @@ La resposta és no autoritativa perquè prové d’un servidor DNS intermediari 
 > set type=A
 > tecnocampus.cat
 ```
-<img width="332" height="314" alt="image" src="https://github.com/user-attachments/assets/67f54b9d-19ab-470c-ac9e-8c58b96e24d1" />
+<img width="369" height="334" alt="image" src="https://github.com/user-attachments/assets/e17ef9d3-0c18-48ef-83c9-9a39b52a05ad" />
+
 
 Anàlisi:
 
-La resposta és autoritativa perquè prové directament d’un servidor de noms autoritatiu. Això garanteix que la informació és oficial i actual.
+La diferència principal és que ara la consulta s’ha fet directament al servidor autoritatiu (205.251.192.130), per això la resposta és oficial i actual. En la primera comanda, la resposta era no autoritativa perquè provenia d’un servidor DNS intermediari (el DNS local). Aquesta prova confirma que la informació prové del servidor autoritatiu i no d’un cache, cosa que garanteix la fiabilitat.
 
 ## C. Resolucions Locals
 
@@ -138,6 +123,9 @@ Comanda:
 ```bash
 ping (Nom del teu server).test
 ```
+<img width="648" height="184" alt="image" src="https://github.com/user-attachments/assets/061fa333-deab-4dca-a2e4-2444f550e352" />
+
+
 Anàlisi:
 
 El sistema resol correctament el nom sense consultar DNS externs, cosa útil en entorns locals o per proves de desenvolupament.
