@@ -24,4 +24,4 @@ ermisos de visualització estan correctament configurats per permetre l’accés
 - link.md.
 
 ---
-
+[Tornar a la pagina principal](../README.md)
