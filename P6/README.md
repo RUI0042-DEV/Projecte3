@@ -21,4 +21,7 @@ ermisos de visualització estan correctament configurats per permetre l’accés
 ## 📁 Contingut del repositori
 
 - `README.md`: Descripció del projecte.
-- Enllaç al vídeo.
+- link.md.
+
+---
+
