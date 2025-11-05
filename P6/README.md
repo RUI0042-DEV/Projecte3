@@ -16,7 +16,7 @@ Aquest recurs audiovisual representa una mostra del treball realitzat i s'inclou
 ## 🔗 Accés al vídeo
 
 El vídeo ha estat publicat a [Microsoft Stream](https://stream.microsoft.com) (o altra plataforma escollida).  
-ermisos de visualització estan correctament configurats per permetre l’accés públic o restringit segons convingui.
+permisos de visualització estan correctament configurats per permetre l’accés públic o restringit segons convingui.
 
 ## 📁 Contingut del repositori
 
