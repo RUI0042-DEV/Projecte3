@@ -43,3 +43,5 @@ Un cop finalitzada la formació, hauràs de respondre un **qüestionari** per ta
 
 - [RA2AA1 Protecció de la informació](https://docs.google.com/presentation/d/12lUibOLU_6kCJRNg59eXIrDNA6c1a6oK/edit?slide=id.p1#slide=id.p1)
 - [RA2AA2 Sistemes d’emmagatzematge](https://docs.google.com/presentation/d/17Yj0kBSwE8ct7ViQuq0a8yqEfUUbrGMt/edit?slide=id.p1#slide=id.p1)
+---
+[Tornar a la pagina principal](../README.md)
