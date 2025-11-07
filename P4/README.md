@@ -25,3 +25,6 @@ Utilitzeu el protocol **SCP** per transferir els fitxers de configuració:
 📌 Exemple de comanda SCP:
 ```bash
 scp usuari@ip:/etc/bind/named.conf.options .
+```
+---
+[Tornar a la pagina principal](.//README.md)
