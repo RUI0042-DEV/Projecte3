@@ -27,4 +27,4 @@ Utilitzeu el protocol **SCP** per transferir els fitxers de configuració:
 scp usuari@ip:/etc/bind/named.conf.options .
 ```
 ---
-[Tornar a la pagina principal](.//README.md)
+[Tornar a la pagina principal](..//README.md)
