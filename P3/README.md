@@ -1,4 +1,4 @@
-# P03: Rèplica web
+# P03: Rèplica web 🖥️
 
 ## Breu descripció
 
@@ -6,20 +6,22 @@ Després de superar la primera fase de supervivència tècnica a EverPia, l’eq
 
 Aquest repte forma part de l’escenari _“Sobreviure en una empresa IT”_, on l’objectiu no és només fer funcionar els sistemes, sinó fer-ho amb criteri, rigor tècnic i capacitat d’adaptació a webs complexes i ben dissenyades.
 
-El client vol una còpia de la web [davidperalvarez.com](https://davidperalvarez.com), un lloc que destaca per la seva claredat, estructura SEO, disseny net i continguts professionals.
+El client vol una còpia de la web https://davidperalvarez.com, un lloc que destaca per la seva claredat, estructura SEO, disseny net i continguts professionals.
 
- replicar fidelment una web existent, tant a nivell de pàgines i enllaços com d’aparença i organització interna, tot treballant des d’un entorn local de proves amb WP Local.
+## 🎯 Objectiu
+
+Aprendre a replicar fidelment una web existent, tant a nivell de pàgines i enllaços com d’aparença i organització interna, tot treballant des d’un entorn local de proves amb WP Local.
 
 ---
 
-## Instruccions
+## 📋 Instruccions
 
 ### Entorn de treball
 
 - Utilitzeu **WP Local** instal·lat al PC de classe.
 - Creeu una nova web anomenada: `replica_[nom]` (exemple: `replica_Cristian`).
 
-### Investigació prèvia
+### 🔍 Investigació prèvia
 
 1. Visiteu la web original i exploreu-ne totes les seccions.
 2. Analitzeu:
@@ -27,12 +29,15 @@ El client vol una còpia de la web [davidperalvarez.com](https://davidperalvarez
    - L’estructura de continguts (textos, imatges, vídeos, seccions).
    - L’estil visual (colors, tipografia, distribució).
 3. Investigueu amb quins **plugins** o **themes** està feta la web:
-   - [WP Theme Detector](https://www.wpthemedetector.comPicker](https://ca
-   - [MyFonts](https://www.myfonts.com/es)
-u el sitemap XML per veure totes les URL existents:
-   - [https://davidperalvarez.com/page-sitemap.xml](https://davidperalvarez.com/page-sitemap.xml)
+   - https://www.wpthemedetector.com/
+   - https://imagecolorpicker.com/ca
+   - https://www.myfonts.com/es
+4. Consulteu el sitemap XML per veure totes les URL existents:
+   - https://davidperalvarez.com/page-sitemap.xml
 
-àgines principals amb els seus continguts:
+### 🧱 Creació de pàgines
+
+Reproduïu les següents pàgines principals amb els seus continguts:
 
 - Inici
 - Sobre mí
@@ -46,7 +51,7 @@ u el sitemap XML per veure totes les URL existents:
 
 > Podeu copiar el text original o utilitzar **Lorem Ipsum**, però cal mantenir els títols, seccions i estructura visual originals.
 
-### Configuració del lloc
+### ⚙️ Configuració del lloc
 
 - Definiu una **pàgina d’inici estàtica**.
 - Configureu el **menú principal** i els **submenús**.
@@ -55,7 +60,7 @@ u el sitemap XML per veure totes les URL existents:
 
 ---
 
-## Objectius específics
+## 🎓 Objectius específics
 
 - Analitzar una web professional feta amb WordPress.
 - Reproduir-ne l’estructura amb eines pròpies.
@@ -64,7 +69,7 @@ u el sitemap XML per veure totes les URL existents:
 
 ---
 
-## Recomanació de plugin
+## 🔌 Recomanació de plugin
 
 Per crear més blocs i millorar la construcció de pàgines, es recomana instal·lar:
 
@@ -72,7 +77,6 @@ Per crear més blocs i millorar la construcció de pàgines, es recomana instal�
 
 ---
 
-## Resultat esperat
+## ✅ Resultat esperat
 
 Una rèplica funcional i visualment fidel de la web original, construïda en local amb WP Local, que demostri capacitat d’anàlisi, criteri tècnic i habilitats en WordPress.
-
