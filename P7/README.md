@@ -45,3 +45,6 @@ Una **infografia ASG** visual, clara i professional que mostri com EverPia pot s
 ## 💡 Recordatori final
 
 El futur de la tecnologia no és només més potent, sinó també més responsable. Som-hi, equips d’EverPia!
+
+---
+[Tornar a la pagina principal](../README.md)
