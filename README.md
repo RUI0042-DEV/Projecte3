@@ -72,6 +72,7 @@ A EverPia, cada projecte és una història 📖, cada error és una lliçó 📝
 - [Producte 4](P4)
 - [Producte 5](P5)
 - [Producte 6](P6)
+- [Producte 7](P7)
 
 
 
