@@ -1,7 +1,9 @@
 # T03: Gestió flexible de discos (LVM i Espais d’emmagatzematge)
 ## Part Linux – LVM amb Zorin OS
+<img width="175" height="150" alt="image" src="https://github.com/user-attachments/assets/6b811809-f7df-421b-b039-95253fcd5455" />
 
-✅ Discos necessaris
+
+Discos necessaris:
 
 Sistema operatiu: 1 disc (ja existent).
 Discos addicionals: 3 discos de 10 GB.
@@ -76,43 +78,65 @@ Fem un:
 ```bash
 sudo nano /etc/fstab
 ```
-I afegim
+I afegim:
+
 <img width="944" height="468" alt="image" src="https://github.com/user-attachments/assets/18fd3e76-f4c1-4ba4-95d0-dc46a64a9348" />
 
 ## 2. Comprovacions
-``
+```
 pvs    # Mostra volums físics
 vgs    # Mostra grups de volums
 lvs    # Mostra volums lògics
-``
+```
+<img width="814" height="210" alt="image" src="https://github.com/user-attachments/assets/aa031b38-a252-4851-b6ad-c2d8974d0af9" />
+
 ## 3. Snapshot
 
-### Crear snapshot (executar una vegada)
+### Crear snapshot 
 ```bash
 lvcreate -L 100M -s -n copialv01 /dev/volgrup/lv01
 ```
-### Muntar snapshot (executar una vegada)
+<img width="677" height="37" alt="image" src="https://github.com/user-attachments/assets/f55793ef-2aa1-4281-ada3-c534e6dec9fa" />
+
+### Muntar snapshot 
 ```bash
 mkdir /mnt/copia
 mount /dev/volgrup/copialv01 /mnt/copia
 ```
+<img width="599" height="78" alt="image" src="https://github.com/user-attachments/assets/0331cf7d-b3e9-41f2-9651-369b6cde3f06" />
+
 ## 4. Mirroring
 ### Crear volum amb mirall (executar una vegada)
 ```bash
 lvcreate -L 90M -m1 -n mirrorlv volgrup
 ```
+<img width="579" height="151" alt="image" src="https://github.com/user-attachments/assets/a0e65669-c19d-42cf-9b8d-458bde8329c3" />
+
 ### Formatar i muntar el volum amb mirall
 ```bash
-mkfs.ext4 /dev/volgrup/mirrorlv
 mkdir /mnt/mirror
+mkfs.ext4 /dev/volgrup/mirrorlv
 mount /dev/volgrup/mirrorlv /mnt/mirror
 ```
+<img width="687" height="240" alt="image" src="https://github.com/user-attachments/assets/074eda12-b16c-4a03-8622-16479f1a605b" />
+
 # 5. Eliminació d’un LV
 ```bash
 umount /mnt/lv01
 lvremove /dev/volgrup/lv01
 ```
-# Si hi ha entrada a /etc/fstab, eliminar-la
+<img width="936" height="112" alt="image" src="https://github.com/user-attachments/assets/e800860f-0b4b-4570-9339-a02a11098c57" />
+
+
+### Eliminar la línia corresponent a aquest LV de /etc/fstab
+```bash
+nano /etc/fstab
+```
+Esborra la línia:
+``
+/dev/volgrup/lv01 /mnt/lv01 ext4 defaults 0 0
+``
+<img width="950" height="482" alt="image" src="https://github.com/user-attachments/assets/3224c407-2fa4-4739-97c0-eb2ce0762226" />
 
 ## 6. Comprovació final
 ```bash
@@ -120,4 +144,5 @@ pvs
 vgs
 lvs
 ```
+<img width="771" height="240" alt="image" src="https://github.com/user-attachments/assets/cf9cecf6-8b0d-43ac-a1ae-2f71a890ed68" />
 
