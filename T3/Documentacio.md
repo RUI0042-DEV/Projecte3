@@ -28,6 +28,10 @@ sudo apt install fdisk
 sudo fdisk -l
 ```
 <img width="648" height="413" alt="image" src="https://github.com/user-attachments/assets/9f5887a7-6c43-44c5-9577-2f6fe301acdf" />
+### Instalació lvm2
+```bash
+sudo apt install lvm2
+```
 
 ### Inicialitzar volums físics (executar una sola vegada amb tots els discos)
 ```bash
