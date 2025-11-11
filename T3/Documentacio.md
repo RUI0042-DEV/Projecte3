@@ -13,7 +13,8 @@ Es faran servir per crear el grup de volums, el volum lògic, el snapshot i el m
 ## 1. Configuració inicial
 
 Crear un grup de volums (VG) i un volum lògic (LV) amb els discos afegits.
-Abans de executar farem un:
+
+Abans de executar els comandes farem un:
 ```bash
 sudo su
 ```
