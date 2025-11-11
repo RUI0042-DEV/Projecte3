@@ -213,6 +213,43 @@ Un cop ja poseu el nom de l'usuari ires on posa unix i posar el grup primari con
 ### 5.1 Instal·lació del Client
 
 Passos:
-- Instal·la Ubuntu Desktop en una màquina virtual.
+- Instal·la Ubuntu Desktop en una màquina virtual(Zorin).
 - Configura la interfície de xarxa com a Host-Only.
 - Comprova la connexió amb el servidor fent un ping a la seva IP.
+
+### 5.2 Resolució de Noms
+
+1-Editar el arxiu
+```
+sudo nano /etc/hosts
+```
+2-Afegeix la linea
+```
+<IP-del-servidor> server.innovatechXX.test
+```
+<img width="598" height="190" alt="image" src="https://github.com/user-attachments/assets/81869044-3418-47eb-9b32-0419e1368b9c" />
+
+3-Desa i tanca, i fer el comanda:
+
+```
+sudo hostnamectl set-hostname client
+```
+<img width="653" height="55" alt="image" src="https://github.com/user-attachments/assets/1b154022-6efe-447f-bc4d-c839d3259ed4" />
+
+4-Comprovació
+```bash
+Hostaname -f
+```
+<img width="376" height="43" alt="image" src="https://github.com/user-attachments/assets/56e267a0-59fc-4214-91a4-bf732150939d" />
+
+```bash
+dig server.innovatechXX.test
+```
+<img width="636" height="377" alt="image" src="https://github.com/user-attachments/assets/7b0d4763-366b-491a-a969-12cbc4641300" />
+
+```bash
+ping server.innovatechXX.test
+```
+<img width="647" height="135" alt="image" src="https://github.com/user-attachments/assets/691742fa-6b3a-49e0-a020-2a8690758f41" />
+
+### 5.3 Instalació de dels moduls necessaris
