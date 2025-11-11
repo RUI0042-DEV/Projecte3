@@ -128,6 +128,7 @@ Utilitza:
 sudo slapcat
 ```
 Això mostrarà el contingut actual de la base de dades LDAP, incloent les OUs creades.
+
 ---
 ## 👥 Instal·lació i Configuració de LAM
 ```bash
