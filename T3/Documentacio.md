@@ -145,5 +145,6 @@ vgs
 lvs
 ```
 <img width="771" height="240" alt="image" src="https://github.com/user-attachments/assets/cf9cecf6-8b0d-43ac-a1ae-2f71a890ed68" />
+
 ---
 [Tornar enrere](README.md)
