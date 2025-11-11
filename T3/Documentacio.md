@@ -35,30 +35,50 @@ sudo apt install lvm2
 
 ### Inicialitzar volums físics (executar una sola vegada amb tots els discos)
 ```bash
-pvcreate /dev/sdb /dev/sdc /dev/sdd
+pvcreate /dev/sdb 
 ```
+<img width="493" height="124" alt="image" src="https://github.com/user-attachments/assets/0422e2bd-a786-449e-a388-74163e203407" />
+
 ### Crear grup de volums (executar una sola vegada)
 ```bash
 vgcreate volgrup /dev/sdb /dev/sdc
 ```
+<img width="538" height="59" alt="image" src="https://github.com/user-attachments/assets/db0f4499-007f-4ec6-bb81-01f386eb58bd" />
+
 ### Afegir un disc més al grup (executar quan s'afegeix el tercer disc)
 ```bash
 vgextend volgrup /dev/sdd
 ```
+<img width="524" height="59" alt="image" src="https://github.com/user-attachments/assets/c04e9e71-ea27-4c3c-a41b-6d54def3fdea" />
+
+### Mostrant els VG
+```bash
+vgdisplay
+```
+<img width="569" height="382" alt="image" src="https://github.com/user-attachments/assets/e33232da-c2fb-4d27-a66f-7089b5d9efe8" />
+
 ### Crear volum lògic (primer LV)
 ```bash
 lvcreate -L 100M -n lv01 volgrup
 ```
+<img width="590" height="45" alt="image" src="https://github.com/user-attachments/assets/c70baafb-c3a2-488d-8dc9-bb5bfbb6c744" />
+
 ### Formatar i muntar (executar per cada LV creat)
 ```bash
-mkfs.ext4 /dev/volgrup/lv01
 mkdir /mnt/lv01
+mkfs.ext4 /dev/volgrup/lv01
 mount /dev/volgrup/lv01 /mnt/lv01
-````
-### Afegir a /etc/fstab per muntatge automàtic
-```bash
-echo "/dev/volgrup/lv01 /mnt/lv01 ext4 defaults 0 0" >> /etc/fstab
 ```
+<img width="651" height="219" alt="image" src="https://github.com/user-attachments/assets/e1037edb-16a3-4559-be48-50396deb333e" />
+
+### Afegir a /etc/fstab per muntatge automàtic
+Fem un:
+```bash
+sudo nano /etc/fstab
+```
+I afegim
+<img width="944" height="468" alt="image" src="https://github.com/user-attachments/assets/18fd3e76-f4c1-4ba4-95d0-dc46a64a9348" />
+
 ## 2. Comprovacions
 ``
 pvs    # Mostra volums físics
