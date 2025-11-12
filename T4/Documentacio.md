@@ -336,7 +336,7 @@ Comprovarem que ara es pugui veure els usuaris usant la comanda:
 ```bash
 sudo getent passwd | tail
 ```
-[Foto]
+<img width="646" height="252" alt="image" src="https://github.com/user-attachments/assets/478933e8-9150-45ac-8197-3fe8782954a5" />
 
 Per finalitzar editarem l'arxiu indicat perquè ens permetés l'inici de sessió gràfica
 
