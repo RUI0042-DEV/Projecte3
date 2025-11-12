@@ -15,7 +15,7 @@ Aquest document està pensat per a entorns virtualitzats amb xarxes **NAT** (per
 
 ## 📚 Índex
 
-### 🔐 [1. Instal·lació del Servei OpenLDAP](Part1.md)
+### 📦 [1. Instal·lació del Servei OpenLDAP](Part1.md)
 - ⚙️ 1.1 Preparació de la Infraestructura  
 - 🔐 1.2 Connexió al servidor via SSH
 - 🏷️ 1.3 Configuració del hostname i /etc/hosts  
