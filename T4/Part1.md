@@ -152,3 +152,4 @@ sudo slapcat
 Això mostrarà el contingut actual de la base de dades LDAP, incloent les OUs creades.
 
 ---
+[Tornar enrere](Documentacio.md)
