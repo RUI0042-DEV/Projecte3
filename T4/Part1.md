@@ -73,3 +73,56 @@ Comprovació:
 sudo systemctl status slaqd
 ```
 <img width="1104" height="420" alt="image" src="https://github.com/user-attachments/assets/b81d924e-fbdf-4da3-b993-5b532ba04a48" />
+
+## 🏗️  Configuració del Directori
+
+### 3.1. Crear fitxers LDIF per a les OUs
+
+Primer, crea un fitxer per a **Usuaris**:
+```bash
+sudo nano OU_Usuaris.ldif
+```
+Contingut:
+
+```bash
+dn: ou=Usuaris,dc=innovatechXX,dc=test
+ou: Usuaris
+objectClass: top
+objectClass: organizationalUnit
+```
+<img width="800" height="581" alt="image" src="https://github.com/user-attachments/assets/679b22fa-401c-4f16-8df1-ba6208127eb2" />
+
+Després, crea un fitxer per a Grups:
+
+```bash
+sudo nano OU_Grups.ldif
+```
+Contingut:
+
+```bash
+dn: ou=Grups,dc=innovatechXX,dc=test
+ou: Grups
+objectClass: top
+objectClass: organizationalUnit
+```
+<img width="800" height="575" alt="image" src="https://github.com/user-attachments/assets/db7b008a-3fdf-47c5-95e5-e1b6b3a7e740" />
+
+
+### Afegir les OUs al directori
+
+Executa:
+```bash
+ldapadd -x -D "cn=admin,dc=innovatechXX,dc=test" -W -f OU_Usuaris.ldif
+ldapadd -x -D "cn=admin,dc=innovatechXX,dc=test" -W -f OU_Grups.ldif
+```
+
+### Comprovar la configuració
+
+Utilitza:
+
+```bash
+sudo slapcat
+```
+Això mostrarà el contingut actual de la base de dades LDAP, incloent les OUs creades.
+
+---
