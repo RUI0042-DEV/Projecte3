@@ -17,7 +17,7 @@ Aquest document està pensat per a entorns virtualitzats amb xarxes **NAT** (per
 
 ### 🔐 [1. Instal·lació del Servei OpenLDAP](Part1.md)
 - ⚙️ 1.1 Preparació de la Infraestructura  
-
+- 🔐 1.2 Connexió al servidor via SSH
 - 🏷️ 1.3 Configuració del hostname i /etc/hosts  
 - 📦 1.4 Instal·lació d’OpenLDAP  
 - 🗂️ 1.5 Creació de fitxers LDIF per a les OUs  
@@ -31,7 +31,9 @@ Aquest document està pensat per a entorns virtualitzats amb xarxes **NAT** (per
 - 👥 2.4 Creació de grups i usuaris  
 
 ### 💻 [3. Integració de Client (Ubuntu Desktop)](Part3.md)
-- 🖥️ 3.1 Instal·lació del3.3 Instal·lació dels mòduls necessaris (libpam, nss)  
+- 🖥️ 3.1 Instal·lació del3.3 Instal·lació dels mòduls necessaris (libpam, nss)
+- 🌍 3.2 Resolució de Noms
+- 🔧 3.3 Instalació de dels moduls necessaris
 - 🔍 3.4 Comprovació de connexió LDAP  
 - ⚙️ 3.5 Configuració de PAM i NSS  
 - ✅ 3.6 Validació i inici de sessió amb usuaris LDAP
