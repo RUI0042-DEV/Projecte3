@@ -1,4 +1,4 @@
-## 👥 4.Instal·lació i Configuració de LAM
+## 👥 4. Instal·lació i Configuració de LAM
 
 ### 4.1 Instal·lació del Gestor d'Usuaris LDAP (LAM)
 
