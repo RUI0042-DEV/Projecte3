@@ -1,4 +1,4 @@
-# 5.Integració de Client (Client Ubuntu Desktop)
+# 3. Integració de Client (Client Ubuntu Desktop)
 ### 3.1 Instal·lació del Client
 
 Passos:
