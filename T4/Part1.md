@@ -1,6 +1,6 @@
 # 📦 1.Instal·lació del Servei OpenLDAP
 
-##  1.1 Preparació de la Infraestructura
+## ⚙️ 1.1 Preparació de la Infraestructura
 
 - Nom de màquina del servidor: `server.innovatechXX.test`
 - Xarxa NAT per accés a Internet
@@ -29,7 +29,7 @@ ip a
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/2a8f8dca-801f-445b-90d8-b78c86772341" />
 
 ---
-## 🧾 1.3 Configuració del hostname i /etc/hosts abans de començar
+## 🏷️ 1.3 Configuració del hostname i /etc/hosts abans de començar
 
 ###  Canviar el hostname del servidor:
 ```bash
@@ -74,7 +74,7 @@ sudo systemctl status slaqd
 <img width="1104" height="420" alt="image" src="https://github.com/user-attachments/assets/b81d924e-fbdf-4da3-b993-5b532ba04a48" />
 
 
-### 1.4 Instalació instal·lació OpenLDAP
+### 📦 1.4 Instalació instal·lació OpenLDAP
 
 Per instal·lar el ldap farem servir la comanda:
 ```bash
@@ -100,9 +100,9 @@ sudo slapcat
 <img width="801" height="275" alt="image" src="https://github.com/user-attachments/assets/a855d5b8-2d29-4ee0-a8cd-0f232a58bc2f" />
 
 
-## 🏗️  Configuració del Directori
+##   Configuració del Directori
 
-### 1.5 Crear fitxers LDIF per a les OUs
+###  🗂️ 1.5 Crear fitxers LDIF per a les OUs
 
 Primer, crea un fitxer per a **Usuaris**:
 ```bash
@@ -134,7 +134,7 @@ objectClass: organizationalUnit
 <img width="800" height="575" alt="image" src="https://github.com/user-attachments/assets/db7b008a-3fdf-47c5-95e5-e1b6b3a7e740" />
 
 
-### 1.6 Afegir les OUs al directori
+###  ➕ 1.6 Afegir les OUs al directori
 
 Executa:
 ```bash
@@ -142,7 +142,7 @@ ldapadd -x -D "cn=admin,dc=innovatechXX,dc=test" -W -f OU_Usuaris.ldif
 ldapadd -x -D "cn=admin,dc=innovatechXX,dc=test" -W -f OU_Grups.ldif
 ```
 
-### 1.7 Comprovar la configuració
+### ✅ 1.7 Comprovar la configuració
 
 Utilitza:
 
