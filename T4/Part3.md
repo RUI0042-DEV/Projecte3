@@ -1,12 +1,12 @@
-# 3. Integració de Client (Client Ubuntu Desktop)
-### 3.1 Instal·lació del Client
+# 3. 💻 Integració de Client (Client Ubuntu Desktop)
+### 🖥️ 3.1 Instal·lació del Client
 
 Passos:
 - Instal·la Ubuntu Desktop en una màquina virtual(Zorin).
 - Configura la interfície de xarxa com a Host-Only.
 - Comprova la connexió amb el servidor fent un ping a la seva IP.
 
-### 3.2 Resolució de Noms
+### 🌍 3.2 Resolució de Noms
 
 1-Editar el arxiu
 ```
@@ -41,7 +41,7 @@ ping server.innovatechXX.test
 ```
 <img width="647" height="135" alt="image" src="https://github.com/user-attachments/assets/691742fa-6b3a-49e0-a020-2a8690758f41" />
 
-### 3.3 Instalació de dels moduls necessaris
+### 🔧 3.3 Instalació de dels moduls necessaris
 
 Ara instal·larem els mòduls necessaris per poder utilitzar libpam i nss.
 
@@ -79,7 +79,7 @@ sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
 
 <img width="639" height="369" alt="image" src="https://github.com/user-attachments/assets/19907d3c-2734-4c27-9ada-c710617f7e54" />
 
-### 3.4 Compravació connexió
+### 🔍 3.4 Compravació connexió
 
 ```bash
 ldapsearch -x -D 'cn=admin,dc=innovatechXX,dc=test' -W -H ldap://server.innovatechXX.test -b 'dc=innovatechXX,dc=test' objectClass=posixAccount uid'
@@ -87,7 +87,7 @@ ldapsearch -x -D 'cn=admin,dc=innovatechXX,dc=test' -W -H ldap://server.innovate
 
 <img width="661" height="477" alt="image" src="https://github.com/user-attachments/assets/ae45ccb7-9ad3-49b8-af8d-b896967d6d2b" />
 
-### Configuracions
+### ⚙️ 3.5 Configuracions
 
 Comanda:
 ```bash
@@ -133,7 +133,7 @@ Per finalitzar editarem l'arxiu indicat perquè ens permetés l'inici de sessió
 sudo nano /etc/pam.d/gdm-launch-environment
 ```
 
-### Comprovacions
+### ✅ 3.6 Comprovacions
 
 Ara reniciarem la nostra màquina i iniciarem sessió amb el compte ("tech01")
 
