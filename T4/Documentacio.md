@@ -44,7 +44,7 @@ hostname
 hostname -f
 ```
 - El primer mostra el nom curt (server)
-- El segon mostra el FQDN (server.innovatechXX.test)
+- El segon mostra el domini (server.innovatechXX.test)
 <img width="288" height="77" alt="image" src="https://github.com/user-attachments/assets/a7b76af2-bca7-457f-80f6-2c7f5e2e4d38" />
 
 ---
