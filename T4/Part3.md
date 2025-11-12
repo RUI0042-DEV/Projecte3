@@ -79,7 +79,7 @@ sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
 
 <img width="639" height="369" alt="image" src="https://github.com/user-attachments/assets/19907d3c-2734-4c27-9ada-c710617f7e54" />
 
-### 5.4 Compravació connexió
+### 3.4 Compravació connexió
 
 ```bash
 ldapsearch -x -D 'cn=admin,dc=innovatechXX,dc=test' -W -H ldap://server.innovatechXX.test -b 'dc=innovatechXX,dc=test' objectClass=posixAccount uid'
