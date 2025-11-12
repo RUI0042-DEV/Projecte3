@@ -147,3 +147,5 @@ id
 
 <img width="654" height="134" alt="image" src="https://github.com/user-attachments/assets/ce9184db-60ad-413d-8c63-829de5e55f4a" />
 
+---
+[Tornar enrere](Documentacio.md)
