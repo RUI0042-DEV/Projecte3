@@ -319,6 +319,8 @@ Comanda:
 ```bash
 sudo nano /etc/pam.d/common-session
 ```
+<img width="923" height="482" alt="image" src="https://github.com/user-attachments/assets/9da83ea6-eddf-4e81-9e06-2ce26968a601" />
+
 Afegim la línea indicada per crear els perfils
 
 Ara reniciarem el servei
@@ -327,7 +329,8 @@ Comanda:
 ```bash
 sudo systemctl restart nscd
 ```
-[Foto]
+<img width="464" height="21" alt="image" src="https://github.com/user-attachments/assets/013237a9-99cd-42a6-a819-6b8647bd4a0d" />
+
 
 Comprovarem que ara es pugui veure els usuaris usant la comanda:
 ```bash
