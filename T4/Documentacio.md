@@ -78,7 +78,7 @@ sudo systemctl status slaqd
 <img width="1104" height="420" alt="image" src="https://github.com/user-attachments/assets/b81d924e-fbdf-4da3-b993-5b532ba04a48" />
 
 
-# 🏗️ 3. Configuració del Directori
+## 🏗️ 3. Configuració del Directori
 
 ### 3.1. Crear fitxers LDIF per a les OUs
 
