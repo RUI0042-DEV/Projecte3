@@ -289,3 +289,68 @@ sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
 7-
 
 <img width="639" height="369" alt="image" src="https://github.com/user-attachments/assets/19907d3c-2734-4c27-9ada-c710617f7e54" />
+
+### 5.4 Compravació connexió
+
+```bash
+ldapsearch -x -D 'cn=admin,dc=innovatechXX,dc=test' -W -H ldap://server.innovatechXX.test -b 'dc=innovatechXX,dc=test' objectClass=posixAccount uid'
+```
+
+<img width="661" height="477" alt="image" src="https://github.com/user-attachments/assets/ae45ccb7-9ad3-49b8-af8d-b896967d6d2b" />
+
+### Configuracions
+
+Comanda:
+```bash
+sudo nano /etc/nsswitch.conf
+```
+
+<img width="666" height="482" alt="image" src="https://github.com/user-attachments/assets/5a5f61ad-4e84-43b0-9bbf-d9596f453365" />
+
+Comanda:
+```bash
+sudo nano /etc/pam.d/common-password
+```
+Eliminarem la línea del terme use_authtok
+
+<img width="922" height="484" alt="image" src="https://github.com/user-attachments/assets/647e4177-aa7c-431b-a2fd-0710b56b2b54" />
+
+Comanda:
+```bash
+sudo nano /etc/pam.d/common-session
+```
+Afegim la línea indicada per crear els perfils
+
+Ara reniciarem el servei
+
+Comanda:
+```bash
+sudo systemctl restart nscd
+```
+[Foto]
+
+Comprovarem que ara es pugui veure els usuaris usant la comanda:
+```bash
+sudo getent passwd | tail
+```
+[Foto]
+
+Per finalitzar editarem l'arxiu indicat perquè ens permetés l'inici de sessió gràfica
+
+```bash
+sudo nano /etc/pam.d/gdm-launch-environment
+```
+
+### Comprovacions
+
+Ara reniciarem la nostra màquina i iniciarem sessió amb el compte ("tech01")
+
+<img width="1275" height="778" alt="image" src="https://github.com/user-attachments/assets/ffadaaaa-dcbf-4ed1-b04b-46d9ec130200" />
+
+
+Un cop ja iniciat sessió al compte anirem a terminal i posarem la comanda:
+```bash
+id
+```
+
+<img width="654" height="134" alt="image" src="https://github.com/user-attachments/assets/ce9184db-60ad-413d-8c63-829de5e55f4a" />
