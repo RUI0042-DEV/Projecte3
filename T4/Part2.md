@@ -76,3 +76,6 @@ i per crear usuari el mateix, però al nom de l'usuari tindràs posar on posen e
 Un cop ja poseu el nom de l'usuari ires on posa unix i posar el grup primari conresponent i desesar
 
 <img width="1878" height="521" alt="image" src="https://github.com/user-attachments/assets/00baed12-441e-4665-9b31-00181062d238" />
+
+---
+[Tornar enrere](Documentacio.md)
