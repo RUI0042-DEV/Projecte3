@@ -1,6 +1,6 @@
-## 👥 4. Instal·lació i Configuració de LAM
+## 👥 2. Instal·lació i Configuració de LAM
 
-### 4.1 Instal·lació del Gestor d'Usuaris LDAP (LAM)
+### 2.1 Instal·lació del Gestor d'Usuaris LDAP (LAM)
 
 ```bash
 sudo apt update
@@ -26,7 +26,7 @@ Si no saps quina IP té l’adaptador Host-Only, pots executar utilitzant el com
 ```bash
 ip a
 ```
-### 4.3 Configuració per defecte
+### 2.3 Configuració per defecte
 
 Passos:
 
@@ -55,7 +55,7 @@ cn=admin,dc=innovatechXX,dc=test
 
 - 5-Un cop acabat desar els canvis.
 
-### 4.4 Creació de Grups i Usuaris
+### 2.4 Creació de Grups i Usuaris
 
 Abans de crear els grups haurem d'anar a l'inici del lam i iniciarem sessió la contrasenya és el ldap que has posat
 <img width="861" height="395" alt="image" src="https://github.com/user-attachments/assets/e84f0518-61d0-41ca-953b-02623f6948ef" />
