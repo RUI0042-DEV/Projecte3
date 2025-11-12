@@ -253,3 +253,39 @@ ping server.innovatechXX.test
 <img width="647" height="135" alt="image" src="https://github.com/user-attachments/assets/691742fa-6b3a-49e0-a020-2a8690758f41" />
 
 ### 5.3 Instalació de dels moduls necessaris
+
+Ara instal·larem els mòduls necessaris per poder utilitzar libpam i nss.
+
+Comanda:
+```bash
+sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
+```
+
+1-
+
+<img width="643" height="473" alt="image" src="https://github.com/user-attachments/assets/3156ae22-3426-4fff-889a-ed46cf0bc794" />
+
+2-
+
+<img width="643" height="358" alt="image" src="https://github.com/user-attachments/assets/9de52fb3-01f7-40f2-84ae-947b67fe3a74" />
+
+3-
+
+<img width="635" height="311" alt="image" src="https://github.com/user-attachments/assets/bffe305e-11a6-46d3-a01b-3b19c05956f0" />
+
+
+4-
+
+<img width="639" height="373" alt="image" src="https://github.com/user-attachments/assets/97c73a86-455a-46ff-9a25-c3ab864c2e44" />
+
+5-
+
+<img width="632" height="317" alt="image" src="https://github.com/user-attachments/assets/81c8f6cf-f361-4821-956c-65dd8a2b4f8f" />
+
+6-
+
+<img width="636" height="361" alt="image" src="https://github.com/user-attachments/assets/e752706a-b272-45ea-90bb-6698fa7d15e6" />
+
+7-
+
+<img width="639" height="369" alt="image" src="https://github.com/user-attachments/assets/19907d3c-2734-4c27-9ada-c710617f7e54" />
