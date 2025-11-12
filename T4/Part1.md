@@ -1,4 +1,16 @@
 # 📦 Instal·lació del Servei OpenLDAP
+
+##  Preparació de la Infraestructura
+
+- Nom de màquina del servidor: `server.innovatechXX.test`
+- Xarxa NAT per accés a Internet
+- Xarxa Host-Only per comunicació amb el client ("*Adaptador de nómes l'amfitrió*")
+> 📌 **Important**: Substitueix `XX` pel teu número de llista.  
+> Exemple: Si ets el número **11**, el domini serà `innovatech11.test`.
+<img width="616" height="295" alt="image" src="https://github.com/user-attachments/assets/d9636b01-5d45-41a5-b627-08d17c560bb0" />
+
+<img width="613" height="294" alt="image" src="https://github.com/user-attachments/assets/2745dd06-bc88-4d9d-9603-59d5f2db474e" />
+
 ## 🔐 Connexió al servidor via SSH
 
 Abans de començar qualsevol tasca, connecta't al servidor Ubuntu Server mitjançant SSH des de la màquina física o client.
@@ -44,19 +56,6 @@ hostname -f
 - El primer mostra el nom curt (server)
 - El segon mostra el domini (server.innovatechXX.test)
 <img width="288" height="77" alt="image" src="https://github.com/user-attachments/assets/a7b76af2-bca7-457f-80f6-2c7f5e2e4d38" />
-
----
-## 🔧 1. Preparació de la Infraestructura
-
-- Nom de màquina del servidor: `server.innovatechXX.test`
-- Xarxa NAT per accés a Internet
-- Xarxa Host-Only per comunicació amb el client ("*Adaptador de nómes l'amfitrió*")
-> 📌 **Important**: Substitueix `XX` pel teu número de llista.  
-> Exemple: Si ets el número **11**, el domini serà `innovatech11.test`.
-<img width="616" height="295" alt="image" src="https://github.com/user-attachments/assets/d9636b01-5d45-41a5-b627-08d17c560bb0" />
-
-<img width="613" height="294" alt="image" src="https://github.com/user-attachments/assets/2745dd06-bc88-4d9d-9603-59d5f2db474e" />
-
 
 ---
 ```bash
