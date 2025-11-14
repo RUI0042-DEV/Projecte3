@@ -1,4 +1,4 @@
-# T03: Gestió flexible de discos (LVM i Espais d’emmagatzematge)
+# T03: Gestió flexible de discos (LVM)
 ## Part Linux – LVM amb Zorin OS
 <img width="175" height="150" alt="image" src="https://github.com/user-attachments/assets/6b811809-f7df-421b-b039-95253fcd5455" />
 
