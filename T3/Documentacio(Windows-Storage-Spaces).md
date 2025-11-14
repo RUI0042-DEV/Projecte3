@@ -1,7 +1,8 @@
+# T03: Gestió flexible de discos (Storage Spaces)
 
-**Crear discos addicionals virtuals per al Storage Pool**
+## Crear discos addicionals virtuals per al Storage Pool
 
-<img width="870" height="768" alt="Unofficial_Windows_logo_variant_-_2002–2012_(Multicolored) svg" src="https://github.com/user-attachments/assets/9b21570a-326f-434d-9612-45de8fd51a3f" />
+<img width="175" height="175" alt="Unofficial_Windows_logo_variant_-_2002–2012_(Multicolored) svg" src="https://github.com/user-attachments/assets/9b21570a-326f-434d-9612-45de8fd51a3f" />
 
 Obre la configuració de la VM.
 
