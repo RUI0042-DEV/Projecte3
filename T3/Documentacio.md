@@ -21,7 +21,9 @@ Abans de executar els comandes farem un:
 sudo su
 ```
 Fem això per estar en *root* per executar les comandes sense cap problema
+
 ### Instalacio fdisk
+
 ```bash
 sudo apt install fdisk
 ```
