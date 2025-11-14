@@ -93,4 +93,5 @@ Haureu de presentar al client les **conclusions** de la vostra feina en una **pr
 - [Espais d’emmagatzematge (Windows)](https://docs.google.com/presentation/d/1Xi9atPzB6fmiLM0qmKP2PxBrixb-s-ZB/edit?slide=id.p1#slide=id.p1)
 ---
 - [Documentacio Linux LVM](Documentacio.(Linux-LVM).md)
+- [Documentacio Windows Storage Spaces](Documentacio.(Windows-Storage -Spaces).md)
 - [Tornar a la pagina principal](../README.md)
